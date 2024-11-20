@@ -171,6 +171,8 @@ fn main() {
                 );
             }
 
+            stdout().flush().expect("Failed to flush stdout.")
+
             exit(exit_code);
         }
         Err(err) => {
